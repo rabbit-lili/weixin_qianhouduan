@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>大学圈</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="/lib/layui/css/layui.css">
+    <!-- 屏幕适配js引入 -->
+    <script src="/js/xiaoyuan/security.js"></script>
+    <script src="/js/lib-flexible-2.0/index.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+      
+    </script>
+    <div class="main">
+        <div class="layui-card">
+            <div class="layui-card-header">
+                <span>欢迎回来</span>
+            </div>
+            <div class="layui-card-body">
+
+                <form class="layui-form" id="btn_submit">
+                    <!-- 用户名 -->
+                    <div class="layui-form-item">
+                        <i class="layui-icon layui-icon-username"></i>
+                        <input type="text" name="username" required lay-verify="required" placeholder="请输入学号" autocomplete="off" class="layui-input">
+
+                    </div>
+                    <!-- 密码 -->
+                    <div class="layui-form-item">
+                        <i class="layui-icon layui-icon-password"></i>
+                        <input type="password" name="password" id="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                    </div>
+
+                    <!-- 验证码 -->
+                    <div class="layui-form-item">
+                        <i class="layui-icon layui-icon-username"></i>
+                        <input type="text" name="yanzhengma" required lay-verify="required" placeholder="请输入验证码" autocomplete="off" class="layui-input yanzhengma">
+                        <img src="" alt="" id="yanzhengma" class="tu">
+
+                    </div>
+
+                    <!-- 登录 -->
+                    <div class="layui-form-item">
+                        <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit>登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+                    </div>
+                </form>
+
+                <nav>
+                    <a href="#" class="left_img">
+                        <img src="/images/ic_kefu@2x.png" alt="">
+                        <span>联系客服</span>
+                    </a>
+                    <a href="#">
+                        <img src="/images/ic_phone@2x.png" alt="">
+                        <span>app登录</span>
+                    </a>
+                </nav>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="./lib/layui/layui.all.js"></script>
+    <script src="./lib/jquery.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
